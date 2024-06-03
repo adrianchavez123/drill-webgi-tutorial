@@ -1,18 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>WebGi starter</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-	<title>WebGi starter</title>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-</head>
+  <body>
+    <div class="loader">
+      <p>Loading... Please wait</p>
+      <div class="progress"></div>
+    </div>
+    <nav class="nav--bar">
+      <span>Something</span>
+      <!-- <img src="assets/logo.svg" class="logo" /> -->
+      <button class="button--navbar">BUY NOW</button>
+    </nav>
+    <div class="container">
+      <section class="section">
+        <div class="section--one--container">
+          <h1>Perfect Drill</h1>
+        </div>
+      </section>
 
-<body>
-	<div id="webgi-canvas-container">
-		<canvas id="webgi-canvas"></canvas>
-	</div>
+      <section class="section second">
+        <div class="section--two--container">
+          <h2>Comfortable to use</h2>
+          <p>
+            Ergonomic reversible hammer drill design with optiona grip
+            positions, light weight and insulated shock proof plastic body, esy
+            to change bits
+          </p>
+          <div class="custom-bg"></div>
+        </div>
+      </section>
 
-	<script src="src/index.ts" type="module"></script>
-</body>
+      <section class="third">
+        <div class="section--third--container">
+          <h2>Wood and metal</h2>
+          <p>
+            Supports wood and metal drilling. Metal drill bits are not part of
+            the included components with the product. Metal drill bits can be
+            procured by the customer and can be used fro drilling int o methat
+            surfaces
+          </p>
+          <button class="button--customize">CUSTOMIZE</button>
+        </div>
+      </section>
+    </div>
+    <div id="webgi-canvas-container">
+      <canvas id="webgi-canvas"></canvas>
+    </div>
+    <footer>
+      <button class="button--footer">BACK TO TOP</button>
+    </footer>
 
+    <div class="customizer--container">
+      <ul class="strap--colors">
+        <li class="button-colors yellow"></li>
+        <li class="button-colors red"></li>
+        <li class="button-colors black"></li>
+      </ul>
+    </div>
+    <script src="src/index.ts" type="module"></script>
+  </body>
 </html>
